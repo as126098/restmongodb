@@ -1,0 +1,54 @@
+ {
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "definitions": {},
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "_id",
+      "species",
+     "breed"
+   ],
+   "properties": {
+     "_id": {
+       "$id": "#/properties/_id",
+       "type": "string",
+       "title": "The _id Schema",
+       "default": "",
+       "examples": [
+         "5cb237d461e5132540628a5e"
+       ],
+       "pattern": "^(.*)$"
+     },
+     "name": {
+       "$id": "#/properties/name",
+       "type": "string",
+       "title": "The Name Schema",
+       "default": "",
+       "examples": [
+         "Spot"
+       ],
+       "pattern": "^(.*)$"
+     },
+     "species": {
+       "$id": "#/properties/species",
+       "type": "string",
+       "title": "The Species Schema",
+       "default": "",
+       "examples": [
+         "dog"
+       ],
+       "pattern": "^(.*)$"
+     },
+     "breed": {
+       "$id": "#/properties/breed",
+       "type": "string",
+       "title": "The Breed Schema",
+       "default": "",
+       "examples": [
+         "pitbull"
+       ],
+       "pattern": "^(.*)$"
+     }
+   }
+}
